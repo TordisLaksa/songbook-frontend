@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sangbog</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/main.js" type="module" defer></script>
+</head>
+<body>
+    <!-- Container til mål -->
+    <div class="container">
+
+        <header>
+            <h1>Sangbog</h1>
+
+            <nav>
+                <a href="index.html">Hjem</a>
+                <a href="opretNy.html">Opret ny sang</a>
+            </nav>
+
+            <section class="search">
+                <form method="GET">
+                    <input type="text" name="keyword" id="keyword">
+                    <button type="submit" id="search">Søg</button>    
+                </form>
+            </section>
+        </header>
+        <main>
+            <h2>Opret ny sang</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="title" class="form-label">Title</label>
+                    <input type="text" name="title" class="form-control" id="title">
+                </div>
+                <div class="mb-3">
+                    <label for="content" class="form-label">Brødtekst</label>
+                    <textarea class="form-control" name="content"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
